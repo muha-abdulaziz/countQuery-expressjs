@@ -1,12 +1,13 @@
 var express = require('express');
-var router = express.Router();
+var countNums = require("../count");
 
+var router = express.Router();
 /* GET '/count' router */
 router.get('/', function(req, res, next) {
-    var arrar = rew.query.array;
+    var array = req.query.array;
+    var count = countNums(array);
 
-    console.log(array);
-    res.json({'array': array});
+    res.json(count);
 
     next();
 });
