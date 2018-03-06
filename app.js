@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+
 var  count = require('./routes/count');
 
 var app = express();
@@ -27,8 +28,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  //res.render('error');
-  res.end('error');
+  res.json({"error": err.message});
 });
 
 module.exports = app;
