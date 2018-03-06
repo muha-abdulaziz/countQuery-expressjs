@@ -29,5 +29,3 @@ var countNums = function (strOfNum) {
 
 module.exports = countNums;
 
-//var count = countNums("1,2,3,3,3,3");
-//console.log(count);
