@@ -1,7 +1,7 @@
 var countNums = function (strOfNum) {
     // This function takes a String of numbers sperated by commas
     // and return an object of its digits count
-    // input => "1,2,3,3,2"2
+    // input => "1,2,3,3,2"
     // output => {"1", 1, "2", 2, "3", 2}
 
     // return empty object if the strOfNum is empty
